@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f9;
 }
 
 header {
@@ -49,30 +49,14 @@ footer {
     width: 100%;
 }
 
-footer .footer-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer .footer-menu ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-footer .footer-menu ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 footer .footer-info {
-    margin-top: 10px;
     font-size: 0.9rem;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 50px 20px;
     background-color: #343a40;
     color: white;
 }
@@ -82,92 +66,62 @@ footer .footer-info {
     margin-bottom: 20px;
 }
 
-.hero-image {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-/* Text and Video Section */
-.text-video {
+/* Content Section */
+.content {
     display: flex;
     justify-content: space-between;
     padding: 40px 20px;
-    gap: 30px;
+    gap: 40px;
     background-color: #fff;
 }
 
-.text-video .text {
+.content-left {
     flex: 1;
     font-size: 1.1rem;
     color: #495057;
 }
 
-.text-video .video {
+.content-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.text-video video {
+.form-container {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Section */
-.table-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.table-section h2 {
+.form-container h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.form-container p {
+    font-size: 1rem;
+    color: #495057;
     margin-bottom: 20px;
 }
 
-.table-section table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 30px;
-}
-
-.table-section th,
-.table-section td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-.table-section th {
-    background-color: #f1f1f1;
-    font-weight: 600;
-}
-
-/* Form Section */
-.form-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
-}
-
-.form-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.form-section label {
+.form-container label {
     display: block;
     margin-bottom: 8px;
     font-size: 1rem;
     color: #343a40;
 }
 
-.form-section input,
-.form-section select,
-.form-section textarea {
+.form-container input,
+.form-container textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 18px;
@@ -176,28 +130,29 @@ footer .footer-info {
     font-size: 1rem;
 }
 
-.form-section button {
+.form-container button {
     padding: 12px 25px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.form-section .submit-btn {
     background-color: #28a745;
     color: white;
 }
 
-.form-section .submit-btn:hover {
+.form-container button:hover {
     background-color: #218838;
 }
 
-.form-section .reset-btn {
-    background-color: #ffc107;
+/* Footer Section */
+footer {
+    background-color: #343a40;
     color: white;
+    text-align: center;
+    padding: 15px 0;
 }
 
-.form-section .reset-btn:hover {
-    background-color: #e0a800;
+footer .footer-info {
+    font-size: 0.9rem;
+    color: #ccc;
 }
