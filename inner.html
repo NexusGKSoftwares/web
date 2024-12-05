@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Page - Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Inner Page Title</h1>
+        <img src="hero-image.jpg" alt="Hero Image">
+    </section>
+
+    <!-- Text and Video Section -->
+    <section class="text-video">
+        <div class="text">
+            <h2>Some Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Corrupti quos accusamus id dolore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Corrupti quos accusamus id dolore.</p>
+        </div>
+        <div class="video">
+            <video controls poster="video-poster.jpg">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-section">
+        <h2>Accessible Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Col Head</th>
+                    <th>Col Head</th>
+                    <th>Col Head</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Fill out the form</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dropdown">Choose an option:</label>
+            <select id="dropdown" name="dropdown">
+                <optgroup label="Group 1">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option value="option4">Option 4</option>
+                    <option value="option5">Option 5</option>
+                    <option value="option6">Option 6</option>
+                </optgroup>
+            </select>
+
+            <label for="textarea">Comments:</label>
+            <textarea id="textarea" name="textarea"></textarea>
+
+            <label>Preferences:</label>
+            <input type="checkbox" id="checkbox1" name="preference" value="check1"> Option 1
+            <input type="checkbox" id="checkbox2" name="preference" value="check2"> Option 2
+            <input type="checkbox" id="checkbox3" name="preference" value="check3"> Option 3
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <p>&copy; Project - Student Name - Student Email</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
