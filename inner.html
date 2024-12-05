@@ -19,11 +19,12 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f4f7fc;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
             background-color: #333;
-            padding: 20px;
+            padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -53,19 +54,21 @@
         .hero {
             text-align: center;
             background: url('hero-image.jpg') no-repeat center center/cover;
-            padding: 100px 0;
+            padding: 120px 0;
             color: #fff;
         }
 
         .hero h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         .hero-image {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
+            margin-top: 20px;
         }
 
         .text-video {
@@ -81,24 +84,27 @@
         }
 
         .text-video h2 {
-            font-size: 2em;
+            font-size: 2.2em;
             color: #333;
             margin-bottom: 15px;
         }
 
         .text-video p {
             font-size: 1.1em;
-            line-height: 1.6;
             color: #666;
         }
 
         .text-video .video {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .text-video video {
             width: 100%;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .table-section {
@@ -108,7 +114,7 @@
         }
 
         .table-section h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #333;
             margin-bottom: 20px;
         }
@@ -117,11 +123,13 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         th, td {
-            padding: 12px;
+            padding: 15px;
             text-align: left;
+            font-size: 1.1em;
         }
 
         th {
@@ -138,19 +146,19 @@
         }
 
         .form-section {
-            padding: 40px;
+            padding: 50px;
             background-color: #fff;
             text-align: center;
         }
 
         .form-section h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .form-section form {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
             text-align: left;
         }
@@ -164,23 +172,27 @@
 
         .form-section input, .form-section select, .form-section textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 12px;
+            margin-bottom: 20px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .form-buttons {
             display: flex;
             justify-content: space-between;
+            margin-top: 20px;
         }
 
         .form-buttons button {
-            padding: 10px 20px;
-            font-size: 1.1em;
+            padding: 12px 24px;
+            font-size: 1.2em;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            width: 48%;
         }
 
         .reset-btn {
@@ -196,14 +208,15 @@
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
         }
 
         footer a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-size: 1.1em;
         }
 
         footer a:hover {
@@ -214,10 +227,20 @@
         @media (max-width: 768px) {
             .text-video {
                 flex-direction: column;
+                gap: 30px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
             }
 
             .form-section form {
                 padding: 20px;
+            }
+
+            .form-buttons button {
+                width: 100%;
+                margin-top: 15px;
             }
         }
     </style>
@@ -306,35 +329,13 @@
         <h2>Contact Us</h2>
         <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="email" id="email" name="email" required>
 
-            <label for="dropdown">Choose an Option:</label>
-            <select id="dropdown" name="dropdown" required>
-                <optgroup label="Group 1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </optgroup>
-                <optgroup label="Group 2">
-                    <option value="option4">Option 4</option>
-                    <option value="option5">Option 5</option>
-                    <option value="option6">Option 6</option>
-                </optgroup>
-            </select>
-
-            <label for="textarea">Your Comments:</label>
-            <textarea id="textarea" name="textarea" placeholder="Enter your comments"></textarea>
-
-            <label>Preferences:</label>
-            
-            <label for="checkbox1">Email updates</label>
-            <input type="checkbox" id="checkbox1" name="preferences" value="email">
-            
-            <label for="checkbox2">SMS alerts</label>
-            <input type="checkbox" id="checkbox2" name="preferences" value="sms">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <div class="form-buttons">
                 <button type="reset" class="reset-btn">Reset</button>
@@ -345,11 +346,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Example Company. All rights reserved.</p>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
     </footer>
-
 </body>
 
 </html>
