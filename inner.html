@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inner Page - Example Site</title>
-   
+    <title>Inner Page - Enhanced UI</title>
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         /* Reset CSS for consistent layout */
@@ -17,16 +17,18 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f7fc;
+            background-color: #f0f4f8;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header .logo img {
@@ -36,79 +38,93 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #ff9900;
+            color: #ffeb3b;
+            transform: scale(1.1);
         }
 
         .hero {
             text-align: center;
             background: url('hero-image.jpg') no-repeat center center/cover;
-            padding: 100px 0;
+            padding: 120px 0;
             color: #fff;
+            box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
         }
 
         .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
 
-        .hero-image {
+        .hero .hero-image {
             max-width: 100%;
-            height: auto;
             border-radius: 10px;
         }
 
         .text-video {
             display: flex;
             justify-content: space-between;
-            padding: 40px;
+            padding: 50px;
             background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
         }
 
         .text-video .text {
             flex: 1;
-            padding-right: 20px;
+            padding-right: 30px;
         }
 
         .text-video h2 {
-            font-size: 2em;
+            font-size: 2.5rem;
             color: #333;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .text-video p {
-            font-size: 1.1em;
-            line-height: 1.6;
+            font-size: 1.2rem;
             color: #666;
         }
 
         .text-video .video {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .text-video video {
-            width: 100%;
-            border-radius: 10px;
+            width: 90%;
+            border-radius: 8px;
         }
 
         .table-section {
-            padding: 40px;
+            padding: 50px;
             background-color: #f9f9f9;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .table-section h2 {
-            font-size: 2em;
+            font-size: 2.5rem;
             color: #333;
             margin-bottom: 20px;
         }
@@ -117,46 +133,57 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         th, td {
-            padding: 12px;
+            padding: 15px;
             text-align: left;
+            font-size: 1.1rem;
         }
 
         th {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         td {
-            background-color: #f4f4f4;
+            background-color: #fafafa;
+            color: #333;
         }
 
         tbody tr:nth-child(even) td {
-            background-color: #e9e9e9;
+            background-color: #f4f4f4;
         }
 
         .form-section {
-            padding: 40px;
+            padding: 50px;
             background-color: #fff;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .form-section h2 {
-            font-size: 2em;
+            font-size: 2.5rem;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .form-section form {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
             text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .form-section label {
-            font-size: 1.1em;
+            font-size: 1.1rem;
             color: #333;
             margin-bottom: 10px;
             display: block;
@@ -164,10 +191,19 @@
 
         .form-section input, .form-section select, .form-section textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-section input:focus,
+        .form-section select:focus,
+        .form-section textarea:focus {
+            border-color: #4CAF50;
         }
 
         .form-buttons {
@@ -176,48 +212,71 @@
         }
 
         .form-buttons button {
-            padding: 10px 20px;
-            font-size: 1.1em;
-            border: none;
-            cursor: pointer;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
 
         .reset-btn {
-            background-color: #ff4e50;
+            background-color: #f44336;
             color: #fff;
+            border: none;
+        }
+
+        .reset-btn:hover {
+            transform: scale(1.05);
         }
 
         .submit-btn {
             background-color: #4CAF50;
             color: #fff;
+            border: none;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
         }
 
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
         }
 
         footer a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-weight: 500;
         }
 
         footer a:hover {
-            color: #ff9900;
+            color: #ffeb3b;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .text-video {
                 flex-direction: column;
+                padding: 20px;
             }
 
             .form-section form {
-                padding: 20px;
+                padding: 15px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -254,7 +313,7 @@
             <p>Nulla facilisi. Integer vel augue est. Donec at velit ac urna viverra elementum non ut leo.</p>
         </div>
         <div class="video">
-            <video controls poster="video-poster.jpg">
+            <video controls>
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -263,72 +322,42 @@
 
     <!-- Table Section -->
     <section class="table-section">
-        <h2>Player Stats</h2>
+        <h2>Table Heading</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Year</th>
-                    <th>Goals</th>
-                    <th>Assists</th>
-                    <th>Penalties</th>
-                    <th>Games Played</th>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                    <th>Heading 4</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>2020</td>
-                    <td>25</td>
-                    <td>12</td>
-                    <td>5</td>
-                    <td>80</td>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                    <td>Data 4</td>
                 </tr>
                 <tr>
-                    <td>2021</td>
-                    <td>28</td>
-                    <td>15</td>
-                    <td>6</td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>30</td>
-                    <td>18</td>
-                    <td>4</td>
-                    <td>85</td>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
                 </tr>
             </tbody>
         </table>
-        <p>Data Source: Player Statistics Database</p>
     </section>
 
     <!-- Form Section -->
     <section class="form-section">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-            <label for="dropdown">Choose an Option:</label>
-            <select id="dropdown" name="dropdown" required>
-                <optgroup label="Group 1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </optgroup>
-                <optgroup label="Group 2">
-                    <option value="option4">Option 4</option>
-                    <option value="option5">Option 5</option>
-                    <option value="option6">Option 6</option>
-                </optgroup>
-            </select>
-
-            <label for="textarea">Your Comments:</label>
-            <textarea id="textarea" name="textarea" placeholder="Enter your comments"></textarea>
-
-            <label>Preferences:</label>
+        <h2>Form Title</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="preferences">Preferences</label>
             <input type="checkbox" id="checkbox1" name="preferences" value="email">
             <label for="checkbox1">Email updates</label>
             <input type="checkbox" id="checkbox2" name="preferences" value="sms">
