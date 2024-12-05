@@ -1,211 +1,231 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+
+    /* Reset CSS for consistent layout */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
-/* Header and Navigation */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #101820; /* Dark gaming background */
+    color: #fff; /* White text for contrast */
+}
+
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #121212; /* Dark header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo img {
-    max-width: 120px;
+    max-height: 150px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #00ff99; /* Neon green hover effect */
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
-    padding: 70px 20px;
-    background-color: #343a40;
-    color: white;
+    background: url('gaming-hero.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for hero background */
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3em;
     margin-bottom: 20px;
+    color: #ffcc00; /* Golden text for emphasis */
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Text and Video Section */
 .text-video {
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
-    gap: 30px;
-    background-color: #fff;
+    padding: 40px;
+    background-color: #222; /* Dark background for the video section */
 }
 
 .text-video .text {
     flex: 1;
-    font-size: 1.1rem;
-    color: #495057;
+    padding-right: 20px;
+}
+
+.text-video h2 {
+    font-size: 2em;
+    color: #ffcc00; /* Neon gold color */
+    margin-bottom: 15px;
+}
+
+.text-video p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #aaa; /* Light gray text for readability */
 }
 
 .text-video .video {
     flex: 1;
-    display: flex;
-    justify-content: center;
 }
 
 .text-video video {
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
-/* Table Section */
 .table-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
+    padding: 40px;
+    background-color: #1a1a1a; /* Dark gray background */
     text-align: center;
 }
 
 .table-section h2 {
-    font-size: 2rem;
+    font-size: 2em;
+    color: #ffcc00; /* Neon gold */
     margin-bottom: 20px;
 }
 
-.table-section table {
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.table-section th,
-.table-section td {
-    padding: 15px;
-    border: 1px solid #ddd;
+th, td {
+    padding: 12px;
     text-align: left;
 }
 
-.table-section th {
-    background-color: #f1f1f1;
-    font-weight: 600;
+th {
+    background-color: #000000; /* Dark table header */
+    color: #ffffff;
 }
 
-/* Form Section */
+td {
+    background-color: #333; /* Dark background for table rows */
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #444; /* Lighter dark color for even rows */
+}
+
 .form-section {
-    padding: 40px 20px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
+    padding: 40px;
+    background-color: #0e0d0d; /* Dark form background */
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 2em;
+    color: #ffcc00; /* Neon gold */
+    margin-bottom: 20px;
 }
 
 .form-section form {
-    width: 100%;
-    max-width: 500px;
-    background-color: #f8f9fa;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #0e0d0d; /* Dark form background */
 }
 
 .form-section label {
-    display: block;
+    font-size: 1.1em;
+    color: #ffffff;
     margin-bottom: 10px;
-    font-weight: 500;
+    display: block;
 }
 
-.form-section input,
-.form-section select,
-.form-section textarea {
+.form-section input, .form-section select, .form-section textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #444; /* Darker borders for input fields */
+    border-radius: 5px;
+    background-color: #ffffff; /* Dark background for inputs */
+    color: #0b0c04; /* White text for inputs */
 }
 
-.form-section .form-buttons {
+.form-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.form-section .reset-btn,
-.form-section .submit-btn {
-    padding: 12px 25px;
-    font-size: 1rem;
+.form-buttons button {
+    padding: 10px 20px;
+    font-size: 1.1em;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.form-section .submit-btn {
-    background-color: #28a745;
-    color: white;
+.reset-btn {
+    background-color: #ff4e50; /* Red color for reset button */
+    color: #fff;
 }
 
-.form-section .submit-btn:hover {
-    background-color: #218838;
+.reset-btn:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
 }
 
-.form-section .reset-btn {
-    background-color: #ffc107;
-    color: white;
+.submit-btn {
+    background-color: #00ff99; /* Neon green for submit button */
+    color: #fff;
 }
 
-.form-section .reset-btn:hover {
-    background-color: #e0a800;
+.submit-btn:hover {
+    background-color: #00cc7a; /* Slightly darker green on hover */
 }
 
-/* Footer */
 footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
+    background-color: #121212; /* Dark footer background */
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
-footer .footer-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer .footer-menu ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-footer .footer-menu ul li a {
-    color: white;
+footer a {
+    color: #fff;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-footer .footer-info {
-    margin-top: 10px;
+footer a:hover {
+    color: #ff9900; /* Neon gold hover effect */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-video {
+        flex-direction: column;
+    }
+
+    .form-section form {
+        padding: 20px;
+    }
+}
+

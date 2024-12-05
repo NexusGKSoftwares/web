@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fafafa;
-    color: #333;
+    background-color: #121212; /* Dark background for gaming feel */
+    color: #eaeaea; /* Light text for contrast */
 }
 
 a {
@@ -21,10 +21,10 @@ ul {
 
 /* Header */
 header {
-    background-color: #4b6cb7;
-    color: white;
+    background-color: #1f1f1f; /* Dark background */
+    color:  #ffbb00;; /* Neon green text for a gaming look */
     padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 header .container {
@@ -37,8 +37,9 @@ header .container {
 }
 
 header .logo img {
-    max-height: 50px;
+    max-height: 150px;
     transition: transform 0.3s ease;
+    border-radius: 50%;
 }
 
 header .logo:hover img {
@@ -52,9 +53,9 @@ header .tagline p {
 
 /* Navigation */
 nav {
-    background-color: #2c3e50;
+    background-color: #222222; /* Dark navigation */
     padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav .container {
@@ -72,7 +73,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color:  #ffbb00;; /* Neon green */
     font-size: 18px;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -80,14 +81,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #3498db; /* Blue on hover */
 }
 
 nav .sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #34495e;
+    background-color: #333333;
     width: 200px;
     display: none;
     opacity: 0;
@@ -101,11 +102,11 @@ nav ul li:hover .sub-menu {
 
 nav .sub-menu li a {
     padding: 10px;
-    color: white;
+    color:  #ffbb00;;
 }
 
 nav .sub-menu li a:hover {
-    background-color: #2980b9;
+    background-color: #2980b9; /* Blue hover effect */
 }
 
 /* Hero Image */
@@ -130,25 +131,25 @@ nav .sub-menu li a:hover {
 .full-width-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #1c1c1c; /* Dark section background */
 }
 
 .full-width-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color:  #ffbb00;; /* Neon green */
 }
 
 .full-width-section p {
     font-size: 18px;
     line-height: 1.6;
-    color: #7f8c8d;
+    color: #bdc3c7; /* Light gray */
 }
 
 /* Text and Image Sections */
 .text-image-section {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #1c1c1c; /* Dark background */
 }
 
 .text-image-section .container {
@@ -185,7 +186,7 @@ nav .sub-menu li a:hover {
 }
 
 .text-image-section.left .image-section {
-    order: 2; /* Places the image on the right side */
+    order: 2;
 }
 
 /* For Right Section */
@@ -194,42 +195,42 @@ nav .sub-menu li a:hover {
 }
 
 .text-image-section.right .image-section {
-    order: 1; /* Places the image on the left side */
+    order: 1;
 }
 
 .text-image-section h3 {
     font-size: 24px;
-    color: #34495e;
+    color:  #ffbb00;; /* Neon green */
     margin-bottom: 15px;
 }
 
 .text-image-section p {
     font-size: 18px;
-    color: #7f8c8d;
+    color: #bdc3c7; /* Light gray */
     line-height: 1.6;
 }
 
 /* Cards Section */
 .cards {
     padding: 60px 20px;
-    background-color: #ecf0f1;
+    background-color: #2c3e50; /* Dark blue-gray */
     text-align: center;
 }
 
 .cards h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #2c3e50;
+    color:  #ffbb00;; /* Neon green */
 }
 
 .card {
     display: inline-block;
     width: 30%;
-    background-color: #fff;
+    background-color: #333333;
     padding: 20px;
     margin: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -242,7 +243,7 @@ nav .sub-menu li a:hover {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover img {
@@ -252,7 +253,7 @@ nav .sub-menu li a:hover {
 .card h4 {
     font-size: 22px;
     margin-top: 15px;
-    color: #34495e;
+    color: #fff;
 }
 
 .card ul {
@@ -264,7 +265,7 @@ nav .sub-menu li a:hover {
 
 .card .button {
     display: inline-block;
-    background-color: #3498db;
+    background-color:  #ffbb00;; /* Neon green */
     color: white;
     padding: 12px 25px;
     margin-top: 20px;
@@ -274,12 +275,12 @@ nav .sub-menu li a:hover {
 }
 
 .card .button:hover {
-    background-color: #2980b9;
+    background-color: #3498db; /* Blue on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #34495e;
+    background-color: #222222; /* Dark footer background */
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -310,7 +311,7 @@ footer .footer-menu ul li a {
 }
 
 footer .footer-menu ul li a:hover {
-    color: #3498db;
+    color: #ffbb00; /* Neon green */
 }
 
 footer .footer-copyright {
