@@ -1,21 +1,27 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 header {
-    background-color: #333;
+    background-color: #007bff;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-width: 120px;
 }
 
 header nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 header nav ul li {
@@ -26,16 +32,21 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    padding: 15px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
 footer .footer-menu ul {
@@ -53,86 +64,140 @@ footer .footer-menu ul li a {
     text-decoration: none;
 }
 
+footer .footer-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px;
-    background-color: #e0e0e0;
+    padding: 70px 20px;
+    background-color: #343a40;
+    color: white;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-.hero img {
+.hero-image {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Text and Video Section */
 .text-video {
     display: flex;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 30px;
+    background-color: #fff;
 }
 
 .text-video .text {
     flex: 1;
-    padding-right: 20px;
+    font-size: 1.1rem;
+    color: #495057;
 }
 
 .text-video .video {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .text-video video {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Table Section */
 .table-section {
-    padding: 20px;
-    background-color: white;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.table-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .table-section table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 30px;
 }
 
-.table-section th, .table-section td {
-    padding: 10px;
+.table-section th,
+.table-section td {
+    padding: 15px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
+.table-section th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+
 /* Form Section */
 .form-section {
-    padding: 20px;
-    background-color: white;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .form-section label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #343a40;
 }
 
-.form-section input, .form-section select, .form-section textarea {
+.form-section input,
+.form-section select,
+.form-section textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .form-section button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.form-section button:hover {
-    background-color: #555;
+.form-section .submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.form-section .submit-btn:hover {
+    background-color: #218838;
+}
+
+.form-section .reset-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.form-section .reset-btn:hover {
+    background-color: #e0a800;
 }
