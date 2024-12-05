@@ -147,10 +147,14 @@ nav .sub-menu li a:hover {
 
 /* Text and Image Sections */
 .text-image-section {
-    display: flex;
-    justify-content: space-between;
     padding: 60px 20px;
     background-color: #fff;
+}
+
+.text-image-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .text-section {
@@ -173,6 +177,36 @@ nav .sub-menu li a:hover {
 
 .image-section img:hover {
     transform: scale(1.1);
+}
+
+/* For Left Section */
+.text-image-section.left .text-section {
+    text-align: left;
+}
+
+.text-image-section.left .image-section {
+    order: 2; /* Places the image on the right side */
+}
+
+/* For Right Section */
+.text-image-section.right .text-section {
+    text-align: right;
+}
+
+.text-image-section.right .image-section {
+    order: 1; /* Places the image on the left side */
+}
+
+.text-image-section h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.text-image-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
 }
 
 /* Cards Section */
