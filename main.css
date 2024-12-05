@@ -3,9 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f8f9fa;
 }
 
+/* Header and Navigation */
 header {
     background-color: #007bff;
     color: white;
@@ -39,24 +40,10 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .footer-info {
-    font-size: 0.9rem;
-}
-
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 70px 20px;
     background-color: #343a40;
     color: white;
 }
@@ -66,93 +53,159 @@ footer .footer-info {
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Content Section */
-.content {
+/* Text and Video Section */
+.text-video {
     display: flex;
     justify-content: space-between;
     padding: 40px 20px;
-    gap: 40px;
+    gap: 30px;
     background-color: #fff;
 }
 
-.content-left {
+.text-video .text {
     flex: 1;
     font-size: 1.1rem;
     color: #495057;
 }
 
-.content-right {
+.text-video .video {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.form-container {
+.text-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Table Section */
+.table-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.table-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table-section th,
+.table-section td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+
+/* Form Section */
+.form-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.form-section form {
     width: 100%;
     max-width: 500px;
-    padding: 30px;
     background-color: #f8f9fa;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #343a40;
-}
-
-.form-container p {
-    font-size: 1rem;
-    color: #495057;
-    margin-bottom: 20px;
-}
-
-.form-container label {
+.form-section label {
     display: block;
-    margin-bottom: 8px;
-    font-size: 1rem;
-    color: #343a40;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.form-container input,
-.form-container textarea {
+.form-section input,
+.form-section select,
+.form-section textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 4px;
 }
 
-.form-container button {
+.form-section .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section .reset-btn,
+.form-section .submit-btn {
     padding: 12px 25px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.form-section .submit-btn {
     background-color: #28a745;
     color: white;
 }
 
-.form-container button:hover {
+.form-section .submit-btn:hover {
     background-color: #218838;
 }
 
-/* Footer Section */
+.form-section .reset-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.form-section .reset-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Footer */
 footer {
     background-color: #343a40;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 15px 0;
+}
+
+footer .footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer .footer-menu ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 footer .footer-info {
-    font-size: 0.9rem;
-    color: #ccc;
+    margin-top: 10px;
 }
