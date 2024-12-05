@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Layout</title>
+    <title>Gaming Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,10 +11,10 @@
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="logo.png" alt="Logo">
+                <img src="logo.png" alt="Gaming Hub Logo">
             </a>
             <div class="tagline">
-                <p>Gideon Bett - nexusgksoftwares@gmail.com</p>
+                <p>Powered by NexusGK Softwares - Your Ultimate Gaming Experience</p>
             </div>
         </div>
     </header>
@@ -24,85 +24,93 @@
         <div class="container">
             <ul class="top-nav">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#inner-page">Inner Page</a>
+                <li><a href="#games">Games</a>
                     <ul class="sub-menu">
-                        <li><a href="#video">Video</a></li>
-                        <li><a href="#table">Table</a></li>
+                        <li><a href="#featured-games">Featured Games</a></li>
+                        <li><a href="#upcoming-games">Upcoming Games</a></li>
                     </ul>
                 </li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Image Section -->
     <section class="hero">
-        <img src="hero-image.jpg" alt="Hero Image">
+        <img src="hero-image.jpg" alt="Epic Gaming Adventure">
+        <div class="hero-text">
+            <h1>Welcome to Gaming Hub</h1>
+            <p>Your one-stop platform for the latest in gaming. Explore new releases, join the community, and stay ahead of the game!</p>
+        </div>
     </section>
 
     <!-- Full Width Section -->
     <section class="full-width-section">
         <div class="container">
-            <h2>Welcome to My Website</h2>
-            <p>This is a paragraph that spans the full width of the page. You can add more content here as needed.</p>
+            <h2>Latest Releases</h2>
+            <p>Explore our newest additions to the gaming world. These games are designed to give you an unforgettable experience!</p>
         </div>
     </section>
 
-<!-- Text and Image Sections -->
-<section class="text-image-section left">
-    <div class="container">
-        <div class="text-section">
-            <h3>Text on the left</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- Featured Games Section -->
+    <section id="featured-games" class="text-image-section left">
+        <div class="container">
+            <div class="text-section">
+                <h3>Featured Game: "Epic Quest"</h3>
+                <p>Join the adventure in this role-playing game with stunning graphics and an immersive storyline.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="image-section">
+                <img src="game1.jpg" alt="Epic Quest">
+            </div>
         </div>
-        <div class="image-section">
-            <img src="image1.jpg" alt="Image 1">
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="text-image-section right">
-    <div class="container">
-        <div class="image-section">
-            <img src="image2.jpg" alt="Image 2">
+    <!-- Upcoming Games Section -->
+    <section id="upcoming-games" class="text-image-section right">
+        <div class="container">
+            <div class="image-section">
+                <img src="game2.jpg" alt="Future Legends">
+            </div>
+            <div class="text-section">
+                <h3>Upcoming Game: "Future Legends"</h3>
+                <p>A futuristic action game featuring intense battles and a powerful storyline.</p>
+                <a href="#" class="button">Get Ready</a>
+            </div>
         </div>
-        <div class="text-section">
-            <h3>Text on the right</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        
-    </div>
-</section>
+    </section>
 
     <!-- Cards Section -->
     <section class="cards">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2>Our Game Features</h2>
             <div class="card">
-                <img src="card-image1.jpg" alt="Card 1">
-                <h4>Card 1</h4>
+                <img src="card-image1.jpg" alt="Game Features">
+                <h4>Multiplayer Mode</h4>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
+                    <li>Team up with friends or battle against them.</li>
+                    <li>Global leaderboards to show off your skills.</li>
                 </ul>
-                <a href="#inner-page" class="button">Learn More</a>
+                <a href="#community" class="button">Join Now</a>
             </div>
             <div class="card">
-                <img src="card-image2.jpg" alt="Card 2">
-                <h4>Card 2</h4>
+                <img src="card-image2.jpg" alt="Customizable Characters">
+                <h4>Character Customization</h4>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
+                    <li>Create your own avatar with tons of gear options.</li>
+                    <li>Unlock new skins and styles as you progress.</li>
                 </ul>
-                <a href="#inner-page" class="button">Learn More</a>
+                <a href="#games" class="button">Start Customizing</a>
             </div>
             <div class="card">
-                <img src="card-image3.jpg" alt="Card 3">
-                <h4>Card 3</h4>
+                <img src="card-image3.jpg" alt="Game Events">
+                <h4>Special Events</h4>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
+                    <li>Participate in limited-time challenges.</li>
+                    <li>Earn exclusive rewards and collectibles.</li>
                 </ul>
-                <a href="#inner-page" class="button">Learn More</a>
+                <a href="#community" class="button">Join Events</a>
             </div>
         </div>
     </section>
@@ -112,29 +120,29 @@
         <div class="container">
             <div class="footer-menu">
                 <div class="column">
-                    <h4>Menu 1</h4>
+                    <h4>About Us</h4>
                     <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Company Info</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div class="column">
-                    <h4>Menu 2</h4>
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Game Updates</a></li>
                     </ul>
                 </div>
                 <div class="column">
-                    <h4>Menu 3</h4>
+                    <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#">Link 5</a></li>
-                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2024 Gideon Bett - nexusgksoftwares@gmail.com</p>
+                <p>&copy; 2024 Gaming Hub - Powered by NexusGK Softwares</p>
             </div>
         </div>
     </footer>
