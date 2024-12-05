@@ -304,29 +304,54 @@
         <p>Check out more top-rated games in our gaming store!</p>
     </section>
 
-    <!-- Form Section -->
     <section class="form-section">
         <h2>Join Our Gaming Community</h2>
         <form id="contactForm">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your full name">
-
+    
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required placeholder="Enter your email address">
-
+    
             <label for="favoriteGame">Favorite Game:</label>
             <input type="text" id="favoriteGame" name="favoriteGame" required placeholder="Enter your favorite game">
-
+    
             <label for="message">Tell us about your gaming experience:</label>
             <textarea id="message" name="message" rows="4" required placeholder="Share your experience"></textarea>
-
+    
+            <!-- New Checkbox Question -->
+            <label>What type of games do you prefer? (Select all that apply):</label>
+            <div>
+                <input type="checkbox" id="action" name="gameType" value="Action">
+                <label for="action">Action</label>
+            </div>
+            <div>
+                <input type="checkbox" id="rpg" name="gameType" value="RPG">
+                <label for="rpg">RPG</label>
+            </div>
+            <div>
+                <input type="checkbox" id="strategy" name="gameType" value="Strategy">
+                <label for="strategy">Strategy</label>
+            </div>
+    
+            <!-- New Radio Button Question -->
+            <label>What platform do you mostly play on?</label>
+            <div>
+                <input type="radio" id="pc" name="platform" value="PC" required>
+                <label for="pc">PC</label>
+            </div>
+            <div>
+                <input type="radio" id="console" name="platform" value="Console" required>
+                <label for="console">Console</label>
+            </div>
+    
             <div class="form-buttons">
                 <button type="reset" class="reset-btn">Reset</button>
                 <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
     </section>
-
+    
     <!-- Footer -->
     <footer>
         <p>© 2024 Gaming Hub</p>
